@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+
+$font-family-base:  'Open Sans', 'Neue Helvetica W02', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-size-base:    15px;
+$font-size-small:   10px;
+$font-size-medium-small:  12px;
+$font-size-medium:  18px;
+$font-size-large:   24px;
+$font-size-xlarge:  32px;
+$font-size-xxlarge: 46px;
+$font-size-xxxlarge:72px;
+
+$line-height-base:  1;
+$line-height-medium: 1;
+$line-height-xxlarge: 1;
+
+$font-weight-brand-medium: 500;
+$font-weight-brand-regular: 400;
+
+$font-weight-light: 200;
+$font-weight-thin: 300;
+$font-weight-medium: 400;
+$font-weight-heavy: 700;
+
+.small {
+  font-size: $font-size-small !important;
+}
+
+.medium {
+  font-size: $font-size-medium !important;
+}
+
+.large {
+  font-size: $font-size-large !important;
+}
+
+.xlarge {
+  font-size: $font-size-xlarge !important;
+}
+
+.xxlarge {
+  font-size: $font-size-xxlarge !important;
+}
+
+.xxxlarge {
+  font-size: $font-size-xxxlarge !important;
+}
+
+
+/***************************************************
+ * FONTS
+ **************************************************/
+
+@font-face {
+    font-family: 'BtNet_Block';
+    src: url('TEMPLATE_IMAGE_PATH/fonts/block/btnet_block.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Neverwinter';
+    src: url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.eot');
+    src: url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.woff2') format('woff2'),
+         url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.woff') format('woff'),
+         url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.ttf') format('truetype'),
+         url('TEMPLATE_IMAGE_PATH/fonts/neverwinter/neverwinter-webfont.svg#Neverwinter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nightmare';
+    src: url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.eot');
+    src: url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.eot?#iefix') format('embedded-opentype'),
+         url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.woff2') format('woff2'),
+         url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.woff') format('woff'),
+         url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.ttf') format('truetype'),
+         url('TEMPLATE_IMAGE_PATH/fonts/nightemare/nitemare-webfont.svg#Nightmare') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,162 @@
+
+/***************************************************
+/*Chat Plugin
+ **************************************************/
+.chatWindow, .chatWindowMenu{
+	background-color: #2F2F2F !important;
+	border: 1px solid rgba(0, 0, 0, .20);
+	border-radius: 0px;
+}
+
+ #chatMenu .chatWindowHeader2,.chatWindowHeader, .chatWindowHeader2 {
+	background: #202020!important;
+	color:#0071A2!important;
+	border-radius: 5px 5px 0px 0px;
+}
+.chatWindowContent, .chatWindowAddUser, .chat_last_online {
+	background: #2F2F2F!important;
+	color:#D9D7D7!important;
+}
+.active .chatWindowHeader{
+	background: #0071A2!important;
+	color:#FFF!important;
+	border-radius: 0px;
+}
+.chatPost,.chatNewPost{
+border-top:1px solid #292323!important;
+background:transparent!important;
+
+}
+.chatOnlineSeperator{
+border-bottom:1px solid #000;
+}
+
+.chat_username, .chat_user_avatar {
+	color:#FFF;
+}
+#chatMenu .chatInput{
+	background: #131313!important;
+	border: none;
+}
+.chatInput { border-color: #878787 }
+.chatInput input, .chatInput textarea {
+	color: #FFF;
+	border-top: 1px solid #555;
+	outline: 0px none;
+}
+
+.chatWindowMin{
+	background:#0071A2 !important;
+	color:#292323 !important;
+	border:0px solid #000 !important;
+	border-radius: 0px;
+}
+.mine .chatMessage {
+background:#EAEAEA!important;
+box-shadow: 0px 0px 3px 3px rgba(0, 113, 162, 0.15);
+color:#0071A2 !important;
+}
+.chatMessage {
+background:#EAEAEA!important;
+box-shadow: 0px 0px 3px 3px rgba(0, 113, 162, 0.15);
+color:#162536  !important;
+}
+.mine .chatMessage:after, .chatMessage:after{
+border-color: transparent #EAEAEA;
+}
+
+/***************************************************
+ *PortalModule Quick DKP
+ **************************************************/
+.quickdkp_portal td[colspan="2"]{
+	border-top: 1px solid rgba(0, 0, 0, 0.7);
+	box-shadow: none;
+}
+.quickdkp_portal td{
+	box-shadow: none;
+}
+
+/***************************************************
+ *PortalModule Voice
+ **************************************************/
+.voice_portal .portalbox_content { padding: 1px 8px 8px; }
+
+/***************************************************
+ *PortalModule WhoisOnline
+ **************************************************/
+.whoisonline_portal .table { box-shadow: none; }
+.whoisonline_portal .portalbox_content .td, .whoisonline_portal .portalbox_content { padding: 3px 4px; }
+
+/***************************************************
+ *PortalModule Shoutbox
+ **************************************************/
+.shoutbox_portal .portalbox_content { padding: 1px 1px 8px; }
+#htmlShoutboxTable .table { box-shadow: none; }
+.sb_horizontal .sb_content_container { background-color: rgba(0, 22, 41, 0.7) !important; border-color: #3A4E59 !important; }
+.sb_horizontal .sb_with_avatar.sb_content_container:before { border-color: transparent #3A4E59 !important; }
+.sb_horizontal .sb_with_avatar.sb_content_container:after { border-color: transparent #001A30 !important; }
+
+/***************************************************
+ *PortalModule Statistics
+ **************************************************/
+.statistics_portal .table { box-shadow: none; }
+
+/***************************************************
+ * BATTLENET PROGRESS BAR
+ **************************************************/
+/* Steps: 20, 39, 59, 79, 99, 100                */
+.mybars_portal>.portalbox_content>.toggle_container{padding:5px 0px;}
+
+.ui-progressbar {
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin: 5px;
+	height: 20px;
+}
+.progressbar_label {
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 1.7em;
+}
+
+.ui-progressbar-value{
+	border-radius: 0px;
+	background: #0972A5 url('TEMPLATE_IMAGE_PATH/ui-bg_highlight-hard_20_0972a5_1x100.png') repeat-x scroll 50% 50%;
+	border: 1px solid #26B3F7;
+	box-shadow: 0px 0px 0.6em #25A2EC inset, 0px 0px 0.4em #1497E3 inset, 0px 0px 0.5em rgba(18, 135, 204, 0.5), 0px 0px 0.1em rgba(225, 242, 252, 0.5);
+}
+
+/***************************************************
+ * Pluggin MediaCenter
+ **************************************************/
+ .contentContrast .badge,.contentSidebar .badge{
+	color: darken(#001,80%);
+}
+.mcStatisticBox, .mcCategoriesBox{
+	border-radius:0px;
+	border: 1px solid rgba(0,0,0,.4)
+}
+.contentContrast{
+background-color: #001;
+box-shadow: 0 0 0 1px rgba(0,0,0,.7) inset,0px 0 0 2px rgba(255,255,255,.1) inset;
+transition: box-shadow .2s ease-in-out 0s;
+padding: 0;
+display: block;
+position: relative;
+}
+/***************************************************
+ *Plugin Feedposter
+ **************************************************/
+.feedposter.feedtype_rss blockquote{
+	background-color: #001 !important;
+}
+blockquote{
+	border-radius: 0px;
+}
+.feedposter.feedtype_rss blockquote{
+	border-color: #001 !important;
+	color: #001 !important;
+}
+.feedposter.feedtype_rss blockquote::before{color: #001 !important;}

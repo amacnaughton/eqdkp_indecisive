@@ -1,0 +1,166 @@
+
+/* Buttons */
+.button, input[type="submit"], input[type="button"], input[type="reset"], button{
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer !important;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	margin-top: 2px;
+}
+.button:hover, input[type="submit"]:hover, input[type="button"]:hover , input[type="reset"]:hover, button:hover{
+	text-decoration: none;
+}
+.button:active, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active, button:active{
+	position: relative;
+	top: 1px;
+}
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium, .button, input[type="submit"], input[type="button"],input[type="reset"], button {
+	font-size: 13px;
+	padding: .3em 1em .32em;
+}
+.small {
+	font-size: 11px;
+}
+
+button[disabled], button[disabled]:hover, input[type=submit][disabled], input[type=button][disabled], input[type=reset][disabled],input[type=submit][disabled]:hover, input[type=button][disabled]:hover, input[type=reset][disabled]:hover {
+	color: #999;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	text-shadow: none;
+	box-shadow: none;
+	cursor: default;
+}
+
+
+button.thirdpartylogin.facebook {
+	background: #3b5998;
+	color: #fff;
+	border-radius: 3px;
+	border-color: transparent;
+}
+
+button.thirdpartylogin.google {
+	background: #dd4b39;
+	color: #fff;
+	border-radius: 3px;
+	border-color: transparent;
+}
+
+button.thirdpartylogin.battlenet {
+	background: #0e98d8;
+	color: #fff;
+	border-radius: 3px;
+	border-color: transparent;
+}
+
+button.thirdpartylogin.persona {
+	background: #448bc9;
+	color: #fff;
+	border-radius: 3px;
+	border-color: transparent;
+}
+
+button.thirdpartylogin.openid {
+	background: #d5d5d5;
+	color: #000;
+	border-radius: 3px;
+	border-color: transparent;
+}
+
+.bubble-green.filtered {
+	border: 1px solid #58E918 !important;
+	background-color: rgba(88, 233, 24, 0.4);
+	background-image: -moz-linear-gradient(center top , rgba(196, 249, 186, 0.4) 0%, rgba(79, 237, 63, 0.4) 50%, rgba(44, 233, 24, 0.4) 50%, rgba(26, 197, 1, 0.4) 100%);
+}
+
+.bubble-yellow.filtered {
+	border: 1px solid #E9E718 !important;
+	background-color: rgba(233, 231, 24, 0.4);
+	background-image: -moz-linear-gradient(center top , rgba(249, 246, 186, 0.4) 0%, rgba(233, 237, 63, 0.4) 50%, rgba(233, 231, 24, 0.4) 50%, rgba(197, 181, 1, 0.4) 100%);
+}
+
+.bubble-red.filtered {
+	border: 1px solid #E91823 !important;
+	background-color: rgba(233, 24, 35, 0.4);
+	background-image: -moz-linear-gradient(center top , rgba(249, 186, 189, 0.4) 0%, rgba(237, 63, 72, 0.4) 50%, rgba(233, 24, 34, 0.4) 50%, rgba(197, 1, 4, 0.4) 100%);
+}
+
+.bubble {
+  background-color: #001;
+  border-radius: 9px;
+  color: #001;
+  display: inline-block;
+  font-size: .70rem;
+  padding: 1px 6px 1px;
+  position: relative;
+  text-shadow: none !important;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+
+/* Image Buttons */
+/* ToDo: they require core changes */
+[class^="bi_"],[class*=" bi_"]{
+	text-indent: 0px;
+
+}
+.bi_compare:before{
+	content: "\f0ec";
+	font-family: FontAwesome;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.bi_facebook:before{
+	content: "\f082";
+	font-family: FontAwesome;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+/*Image Button without value*/
+.novalue {
+	width: 24px;
+}
+
+/* general: positive/negative/neutral */
+.positive {
+	color: #33cc33;
+	text-shadow: 0px 0px 1px #000;
+}
+.negative {
+	color: #e23b30;
+	text-shadow: 0px 0px 1px #000;
+}
+.neutral {
+	color: #999;
+	text-shadow: 0px 0px 1px #000;
+}

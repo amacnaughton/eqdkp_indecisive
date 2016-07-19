@@ -1,0 +1,68 @@
+/* Header and Site-Titles */
+#wrapper header {
+	background: none;
+}
+
+#header {
+	background: transparent url('TEMPLATE_IMAGE_PATH/background.jpg') no-repeat fixed center 0px !important;
+	display:block;
+	width: 100%;
+	text-align:center;
+}
+
+#logoContainer {
+	overflow: hidden;
+	display:table;
+}
+
+#header .center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header .right {
+	margin-left:auto;
+	margin-right:0px;
+}
+
+#header .none {
+	display:none;
+}
+
+#logoArea {
+	text-align:right;
+	img {
+		width: 500px;
+	}
+}
+
+#titles {
+	float:left;
+	text-align:left;
+	padding-left:40px;
+
+}
+
+#titles h1 {
+	padding-left:50px;
+	padding-top:30px;
+	font-size: 38px;
+	font-weight: bold;
+	color: #EEEEEE;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	text-shadow: 1px 1px 2px #fff;
+	filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+
+#titles h2 {
+	padding-left:50px;
+	margin-top:-10px;
+	padding-top:-10px;
+	font-size: 18px;
+	color: #EEEEEE;
+}
+
+#header, #footer {
+
+}

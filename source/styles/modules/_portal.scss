@@ -1,0 +1,141 @@
+
+/***************************************************
+/* General Portal Layout
+ **************************************************/
+.portal .column {
+	vertical-align: top;
+}
+
+.portal .second .columnInner {
+	padding: 0;
+}
+
+.portal {
+	border-collapse: collapse;
+	display: table;
+	width: 100%;
+}
+.columnContainer {
+	display: table-row;
+	border: none;
+}
+
+.column {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+}
+
+.portal .first{
+	padding:10px 0px 10px 10px;
+	max-width:400px;
+}
+.portal .third {
+	padding:10px 10px 10px 0px;
+	max-width:400px;
+}
+
+.portal .first .columnInner, .portal .third .columnInner, .portal .second .columnInner {
+	padding: 0;
+	min-width: 19em;
+}
+.portal .second {
+	padding:10px;
+	width:100%;
+
+}
+
+.fixed_width #wrapper {
+	min-width: T_PORTAL_WIDTH !important;
+}
+
+#wrapper {
+	margin-bottom:20px;
+	text-align: left;
+	min-width:100%;
+	display:inline-block;
+	text-align: left;
+}
+
+.fixed_width #wrapper .portal .second {
+	width: T_PORTAL_WIDTH_WITHOUT_BOTH_COLUMNS !important;
+}
+
+.fixed_width #wrapper .portal .second.no_third_column {
+	width: T_PORTAL_WIDTH_WITHOUT_LEFT_COLUMN !important;
+}
+
+.fixed_width #personalAreaInner {
+	width: T_PORTAL_WIDTH !important;
+	margin: auto;
+}
+
+.fixed_width.frontend table.scrollable-x {
+	table-layout: fixed;
+}
+
+.fixed_width.frontend table.scrollable-x tbody {
+	display: block;
+	overflow-x: auto;
+}
+
+/***************************************************
+ * PORTAL
+ **************************************************/
+.portalbox {
+	margin: 10px 0px 4px;
+	border: 1px solid #1A0F08;
+	-webkit-box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:  0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.portalbox_head {
+	padding-right: 3px;
+	font-weight: bold;
+	line-height: 28px;
+	font-weight: bold;
+}
+.portalbox_head .portal_fe_edit {
+	display: none;
+}
+
+.portalbox:hover .portal_fe_edit {
+	display: inline;
+}
+
+.portalbox_content {
+	white-space: normal;
+	background-color: rgba(23, 31, 44, 0.4);
+	padding: 0px 0px 0px;
+	display: block;
+	position: relative;
+	line-height: 20px;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+	transition: box-shadow 0.2s ease-in-out 0s;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.7) inset, 0px 0px 0px 2px rgba(255, 255, 255, 0.1) inset;
+	transition: box-shadow 0.2s ease-in-out 0s;
+}
+
+/* Toggle Buttons for portalbox */
+.toggle_button:before{
+	content:"\f078";
+	font-family: FontAwesome;
+	cursor: pointer;
+	float: right;
+	padding-right: 3px;
+}
+
+.toggle_button.active:before {
+	content:"\f077";
+	font-family: FontAwesome;
+}
+
+.portal_fe_edit {
+	float:right;
+	padding-right: 5px;
+}
+
+.confirmdialog{
+	text-align:left;
+}

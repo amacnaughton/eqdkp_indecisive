@@ -1,0 +1,413 @@
+/* ACP: admin menu - update available badge */
+.update_available {
+	background-color: #1D1D1D;
+	border: 1.5px solid #B94A48;
+	margin-right: 4px;
+	margin-left: 6px;
+	padding-right: 9px;
+	padding-left: 9px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #000;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 20px;
+	vertical-align: baseline;
+	white-space: nowrap;
+	background-color: #e91823;
+	background-image: linear-gradient(top, #F9BABD 0%, #ED3F48 50%, #E91822 50%, #C50104 100%);
+	background-image: -o-linear-gradient(top, #F9BABD 0%, #ED3F48 50%, #E91822 50%, #C50104 100%);
+	background-image: -ms-linear-gradient(top, #F9BABD 0%, #ED3F48 50%, #E91822 50%, #C50104 100%);
+	background-image: -moz-linear-gradient(top, #F9BABD 0%, #ED3F48 50%, #E91822 50%, #C50104 100%);
+	background-image: -webkit-linear-gradient(top, #F9BABD 0%, #ED3F48 50%, #E91822 50%, #C50104 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F9BABD), color-stop(0.5, #ED3F48), color-stop(0.5, #E91822), color-stop(1, #C50104));
+	box-shadow: 0 0.25em 0.4em rgba(0,0,0,.33);
+}
+/* ACP: admin menu - update available badge */
+.update_available_yellow {
+	border: 1.5px solid #F89406;
+	margin-right: 4px;
+	margin-left: 6px;
+	padding-right: 9px;
+	padding-left: 9px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #000;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 20px;
+	vertical-align: baseline;
+	white-space: nowrap;
+	background: #fff0bf;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #fff0bf 0%, #ffd651 50%, #ffcd1c 50%, #fcad1b 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff0bf), color-stop(50%,#ffd651), color-stop(50%,#ffcd1c), color-stop(100%,#fcad1b));
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fff0bf 0%,#ffd651 50%,#ffcd1c 50%,#fcad1b 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fff0bf 0%,#ffd651 50%,#ffcd1c 50%,#fcad1b 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff0bf 0%,#ffd651 50%,#ffcd1c 50%,#fcad1b 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #fff0bf 0%,#ffd651 50%,#ffcd1c 50%,#fcad1b 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#fff0bf', endColorstr='#fcad1b',GradientType=0 );
+	/* IE6-9 */
+	box-shadow: 0 0.25em 0.4em rgba(0,0,0,.33);
+}
+/* ACP: index, browsers */
+.browser-icon {
+	display: inline;
+}
+
+.browser-icon svg {
+	width: 24px;
+	height: 24px;
+	fill: #00678e;
+}
+/* ACP: index, rss notifications */
+#notifications,
+#twitterfeed {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+	margin: 0;
+	padding: 5px;
+	border: 1px solid #545454;
+	height: 200px;
+	width: auto;
+	overflow: auto;
+}
+
+#notifications a.rss_readmore,
+#twitterfeed a.rss_readmore {
+	font-size: 10px;
+}
+
+#notifications .date,
+#twitterfeed .date {
+	margin: 0;
+	color: #000019;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#notifications .description,
+#twitterfeed .description {
+	margin: 0;
+	padding: 0;
+}
+
+#notifications .description p,
+#twitterfeed .description p {
+	margin: 0;
+}
+
+#notifications .targetblank,
+#twitterfeed .targetblank {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.notifications-container {
+	padding: 10px;
+}
+
+.rssreader_spinner {
+	margin: 15% 0 0 44%;
+	float: left;
+}
+/* ACP: manage menues */
+.manage_menues_block {
+	list-style-type: none;
+	padding: 3px;
+	margin: 6px;
+	border: 1px dashed #666;
+	min-width: 180px;
+}
+
+.manage_menues_block2 {
+	list-style-type: none;
+	padding: 3px;
+	margin: 6px;
+	border: 3px dashed #666;
+	min-width: 180px;
+}
+
+.manage_menues_block ul {
+	margin: 0;
+	padding: 0;
+}
+
+.manage_menues_block li,
+.manage_menues_block2 li {
+	list-style-type: none;
+	padding: 5px;
+	margin: 5px;
+	background-color: #F5F5F5;
+	cursor: pointer;
+	color: #666;
+}
+
+.manage_menues_block .toggle_button {
+	font-weight: bold;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #EAEAEA;
+	padding: 3px;
+}
+
+.adminicon:before {
+	font-size: inherit !important;
+}
+
+.eye {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.eye:before {
+	content: "\f06e";
+	font-family: FontAwesome;
+	font-size: 16px;
+}
+
+.eye-gray {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.eye-gray:before {
+	content: "\f070";
+	font-family: FontAwesome;
+	color: #B3B3B3;
+	font-size: 16px;
+}
+
+.featured {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.featured:before {
+	content: "\f005";
+	font-family: FontAwesome;
+	color: #B3B3B3;
+	font-size: 16px;
+}
+
+.not-featured {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.not-featured:before {
+	content: "\f005";
+	font-family: FontAwesome;
+	color: #666;
+	font-size: 16px;
+}
+
+.article-container.featured,
+.article_detail_container.featured {
+	display: block;
+}
+
+.article_detail_container.featured:before {
+	display: none;
+}
+
+.article-container.featured header > h2:before,
+.article_detail_container.featured h1.contentTitle:before {
+	content: "\f005";
+	font-family: FontAwesome;
+	color: gold;
+	font-size: 16px;
+}
+
+.article-container.featured:before {
+	content: none;
+}
+/* ACP: portal module management */
+.portal_block_border {
+	padding: 5px;
+	margin: 10px;
+	border: 1px dashed #666;
+}
+
+.red {
+	background: rgba(255, 0, 0, 0.6);
+	color: #000;
+}
+
+#positions .green {
+	background: rgba(0, 255, 0, 0.6) !important;
+	color: #000;
+}
+
+ul.portal_block {
+	min-height: 20px;
+}
+
+.portal_block li {
+	list-style-type: none;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.portal_block_light {
+	list-style-type: none;
+	padding: 5px;
+	margin: 10px;
+	border: 1px dashed #666;
+	background-color: #efefef;
+}
+/* ACP Permissions */
+.permissions {
+	width: 50%;
+	float: left;
+}
+/* ACP: styles management */
+.style {
+	width: 300px;
+	height: 200px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: #001;
+	border: 1px solid #001;
+}
+
+.style-preview {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	filter: brightness(.5);
+	transition: 0.5s ease-in-out;
+	z-index: 0;
+	background-size: cover;
+	background-position: center;
+}
+
+.style:hover .style-preview {
+	filter: brightness(1);
+}
+
+.style input[type="radio"] {
+	opacity: 0;
+}
+
+.style input[type="radio"] + label {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	border: 1px solid #001;
+	border-radius: 3px;
+	background: #001;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.style input[type="radio"] + label:hover:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	border-radius: 1px;
+	background: #001;
+}
+
+.style input[type="radio"]:checked + label:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	border-radius: 1px;
+	background: #001;
+}
+
+.style-action {
+	opacity: 1;
+	width: 100%;
+	padding: 3px 7px;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: darken(#001,50);
+	z-index: 1;
+	display: inline-block;
+	text-align: right;
+	padding: 3px 0;
+	min-height: 17px;
+}
+
+.styles-container .style-action a {
+	color: #001 !important;
+}
+
+.style-info {
+	width: 300px;
+	position: absolute;
+	bottom: -34px;
+	background-color: darken(#001,50);
+	transition: bottom 0.3s ease-in;
+	z-index: 1;
+	padding-top: 2px;
+}
+
+.style-info:hover {
+	bottom: 0;
+}
+
+.style-info h2 {
+	margin: 0 15px;
+}
+
+.style-info table {
+	margin: 5px 10px;
+}
+
+.style-info td {
+	padding-right: 15px;
+}
+
+.style-checkbox {
+	float: left;
+}
+
+.style_red,
+.style_red_local {
+	border-color: #E80000;
+	/* color from .icon-color-red, defined at eqdkpplus.css */
+}
+
+.style_yellow {
+	border-color: #e9ec00;
+	/* color from .icon-color-yellow, defined at eqdkpplus.css */
+}
+
+.style-version {
+	float: right;
+	font-size: #001;
+	padding-top: 3px;
+}
