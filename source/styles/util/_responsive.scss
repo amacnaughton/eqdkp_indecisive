@@ -22,7 +22,12 @@
 	}
 
 	.responsive #header {
-		min-height: 10px;
+		background: none;
+		box-shadow: none;
+		height: auto;
+		.center {
+			margin-left: auto;
+		}
 	}
 
 	.responsive #logoContainer {

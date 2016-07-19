@@ -1,0 +1,91 @@
+.ui-widget-header {
+  background: $color-dark-gray;
+  padding: 5px 0;
+}
+
+.ui-dialog .ui-widget-header {
+  background: #2F2F2F!important;
+  border-radius: 0 !important;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.ui-tabs .ui-tabs-panel {
+  padding: 0;
+}
+
+.ui-tabs ul.ui-tabs-nav {
+  background: none !important;
+  border-radius: 0 !important;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+
+  li {
+    background: none;
+    border: none;
+
+    a:hover {
+      color: $color-primary;
+    }
+
+    a:focus {
+      outline: none;
+    }
+  }
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  padding-bottom: 0 !important;
+
+  a {
+    color: $color-active-link;
+
+    &:hover {
+      color: $color-active-link;
+    }
+  }
+}
+
+.ui-helper-reset {
+  background-color: #1d1d1d;
+}
+
+.ui-widget {
+  font-size: 1.0em !important;
+}
+
+.ui-datepicker,
+.ui-timepicker-div {
+  background-color: #131313;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  min-height: 1.7em;
+}
+
+.ui-tabs.ui-widget-content {}
+
+.ui-widget-content {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ui-corner-all {
+  // border: none;
+  // background: none;
+}
+
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+
+}

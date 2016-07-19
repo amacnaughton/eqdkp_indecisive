@@ -24,35 +24,58 @@
 	display: block;
 }
 
-.sf-menu.mainmenu {
-	margin-bottom: 0;
+
+/* Main Menu */
+
+#mainmenu {
+	margin: 0 11px;
 }
 
-.mainmenu {
-	font-size: 14px;
+.mainmenu,
+.sf-admin {
+	/* Old browsers */
+	width: 100%;
+	min-height: 3em;
 }
 
-ul.mainmenu > li {
-	float: left;
-}
-
-ul.mainmenu li a.link_entry_home:before,
-ul.mainmenu li a.link_indexphp:before {
-	content: "\f015";
-	font-family: FontAwesome;
-	font-size: 20px;
-}
-/* general: superfish - global settings */
 .sf-menu {
 	float: left;
 	margin-bottom: 0.3em;
 	background: transparent;
 }
 
+.sf-admin {
+	li {
+		background: $background-panel;
+	}
+	margin: $spacing 10px 0 10px;
+}
+
+
+ul.mainmenu > li {
+	float: left;
+	background: $color-fade;
+}
+
+ul.mainmenu li a.link_entry_home:before,
+ul.mainmenu li a.link_indexphp:before {
+	content: "\f015";
+	font-family: FontAwesome;
+	font-size: $font-size-medium;
+}
+
+.sf-menu.mainmenu {
+	margin-bottom: 0;
+}
+
 .sf-menu a {
-	padding: 0.75em 1em;
-	text-decoration: none;
-	min-height: 1.4em;
+	@include admin-button;
+	line-height: 1.8;
+
+	&.link_indexphp {
+		line-height: 1.2;
+	}
+
 }
 
 .sf-menu li {
@@ -75,16 +98,42 @@ ul.mainmenu li a.link_indexphp:before {
 	/*	background: #292323;*/
 	outline: 0;
 }
-/* general: superfish - admin menu style */
-/*#mainmenu {
-	background: url('TEMPLATE_IMAGE_PATH/nav_bg.png') repeat scroll 0% 0% #190A09;
-	border-left: 1px solid #27100E;
-	border-right: 1px solid #27100E;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	height: 44px;
-}*/
-/* general: superfish - single dropdown menu */
+
+.mainmenu li,
+.sf-admin li {
+
+}
+
+.mainmenu li li,
+.sf-admin li li,
+.mainmenu li li li,
+.sf-admin li li li {
+	background:url('TEMPLATE_BACKGROUND');
+
+	a {
+		background: rgba(0,0,0,$background-opacity);
+	}
+}
+
+.mainmenu a:focus,
+.mainmenu li:hover,
+.sf-admin a:focus,
+.sf-admin li:hover,
+.sf-menu.mainmenu a:hover,
+.sf-menu.mainmenu li.sfHover,
+.sf-menu.sf-admin a:active,
+.sf-menu.sf-admin a:hover,
+.sf-menu.sf-admin li.sfHover {
+	background: $background-panel;
+}
+
+.sf-admin.sf-menu li li a {
+	padding: 0.60em 1em;
+	text-decoration: none;
+}
+
+/* Dropdown Menu */
+
 .sf-ddm {
 	margin-left: 10px;
 	float: right;
@@ -274,54 +323,6 @@ ul.mainmenu li a.link_indexphp:before {
 	color: #606060 !important;
 }
 
-.mainmenu,
-.sf-admin {
-	background: $color-fade;
-	/* Old browsers */
-	width: 100%;
-	min-height: 3em;
-}
-
-.mainmenu li,
-.sf-admin li {
-	background: transparent;
-	border-right: 1px solid #424242;
-	border-left: 1px solid #000;
-}
-
-.mainmenu li li,
-.sf-admin li li {
-	background: #001629;
-	border-top: 1px solid #000;
-}
-
-.mainmenu li li,
-.mainmenu li li li {
-	font-size: 13px;
-}
-
-.mainmenu li li li,
-.sf-admin li li li {
-	background: #001629;
-	border-top: 1px solid #000;
-}
-
-.mainmenu a:focus,
-.mainmenu li:hover,
-.sf-admin a:focus,
-.sf-admin li:hover,
-.sf-menu.mainmenu a:hover,
-.sf-menu.mainmenu li.sfHover,
-.sf-menu.sf-admin a:active,
-.sf-menu.sf-admin a:hover,
-.sf-menu.sf-admin li.sfHover {
-	background: $color-dark-gray;
-}
-
-.sf-admin.sf-menu li li a {
-	padding: 0.60em 1em;
-	text-decoration: none;
-}
 /* Dropdown Menu */
 .dropdown-menu:after {
 	border-bottom: 6px solid #001629;

@@ -1,10 +1,18 @@
-
 /***************************************************
  * CALENDAR
  **************************************************/
+#calendar_tab {
+	border: none;
+	background: none;
+}
 
- /* calendar: global */
-#calendar_loading{
+#fragment-calendar,
+#fragment-list,
+#fragment-raidstats {
+	margin-top: $spacing/2;
+}
+/* calendar: global */
+#calendar_loading {
 	border-radius: 10px;
 	width: 160px;
 	height: 100px;
@@ -12,60 +20,74 @@
 	line-height: 100px;
 	background-color: rgba(0,0,0,0.4);
 	color: white;
-	position:fixed;
-	top:50%;
-	left:50%;
-	margin-left:-100px;
-	margin-top:-100px;
-	padding: 0px 10px 0px 10px;
-	z-index:999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	padding: 0 10px;
+	z-index: 999999;
 	font-size: 20px;
 }
-#calendar_loading img{
-	margin: 0px 5px 0px 5px;
+
+#calendar_loading img {
+	margin: 0 5px;
 }
-.fc-icons{
+
+.fc-icons {
 	margin-left: 4px;
-	margin-top:2px;
-	border: 0px;
-	display:block;
-	float:left;
+	margin-top: 2px;
+	border: 0;
+	display: block;
+	float: left;
 }
-.fc-flag{
+
+.fc-flag {
 	margin-right: 4px;
-	margin-top:2px;
-	border: 0px;
-	display:block;
-	float:right;
+	margin-top: 2px;
+	border: 0;
+	display: block;
+	float: right;
 }
-.fc-title{
+
+.fc-title {
 	vertical-align: middle;
 }
 /* fix for the buttons in modern template */
 .fc-button-group .ui-corner-left {
-	border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0 0 4px;
 }
+
 .fc-button-group .ui-corner-right {
-	border-radius: 0px 4px 4px 0px;
+	border-radius: 0 4px 4px 0;
 }
+
 .fc-button-group .fc-agendaWeek-button {
 	border-radius: 0;
 }
+
 .fc button {
 	box-shadow: none;
 }
 
-/* add calendar event */
-fieldset.settings.floatRight.raid dl {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+.fc-day-grid-event {
+	background-color: red !important;
 }
 
-fieldset.settings.floatRight.raid input[type="text"]{
+#qtip-2-title > div {
+	margin-right: 0 !important;
+	padding-right: 10px;
+}
+/* add calendar event */
+fieldset.settings.floatRight.raid dl {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+fieldset.settings.floatRight.raid input[type="text"] {
 	margin: 1px;
 	padding: 3px 4px;
 }
-
 /* calendar: raidevent view */
 .raidcal_name {
 	font-size: 28px;
@@ -81,76 +103,92 @@ fieldset.settings.floatRight.raid input[type="text"]{
 	font-weight: normal;
 	line-height: 35px;
 }
-#bottommenu_admin, #bottommenu_chars{
+
+#bottommenu_admin,
+#bottommenu_chars {
 	position: fixed;
-	bottom: 0px;
+	bottom: 0;
 	background: rgba(0, 113, 162, 0.5);
 	float: left;
 	width: 70%;
 	z-index: 99;
 	height: 42px;
-	padding: 0px 0 0px 10px;
-	display:none;
-	color:#000;
-	vertical-align:middle;
-	margin:0;
+	padding: 0 0 0 10px;
+	display: none;
+	color: #000;
+	vertical-align: middle;
+	margin: 0;
 }
-.attendee_awaymode{
+
+.attendee_awaymode {
 	background-color: rgba(255, 0, 0, 0.15);
 }
-#bottommenu_chars{
+
+#bottommenu_chars {
 	height: 70px;
 	clear: both;
 }
-.bottommenu_roundedcorner{
-	border-radius: 0px;
+
+.bottommenu_roundedcorner {
+	border-radius: 0;
 }
 
 .bottommenu_chars_table {
 	height: 70px;
-	width:100%;
-	box-shadow:none;
-}
-.bottommenu_admin_table {
-	height: 42px;
-	width:100%;
-	box-shadow:none;
-}
-.bottommenu_chars_icons {
-	width:65px;
-}
-.bottommenu_admin_icons {
-	width:48px;
-}
-.bottommenu_chars_note {
-	width:60%;
-}
-.hl_attendee_checked{
-	box-shadow: 0px 0px 3px #0071A2 ;
-	border-color: #0071A2 ;
-}
-.raidcal_buttonrow{
-	vertical-align:middle;
 	width: 100%;
-	margin: 0px 0px 10px 0px;
-}
-.raidcal_buttonrow_left{
-	width: 60%;
-	vertical-align:middle;
-}
-.raidcal_buttonrow_middle{
-	width: 22%;
-	vertical-align:middle;
-}
-.raidcal_buttonrow_right{
-	width: 18%;
-	vertical-align:middle;
-}
-.buttonblock{
-	color:inherit;
+	box-shadow: none;
 }
 
-#raidcal_signin_form h2 span.toggle_button:before, #toogleRaidcalModeration h2 span.toggle_button:before {
+.bottommenu_admin_table {
+	height: 42px;
+	width: 100%;
+	box-shadow: none;
+}
+
+.bottommenu_chars_icons {
+	width: 65px;
+}
+
+.bottommenu_admin_icons {
+	width: 48px;
+}
+
+.bottommenu_chars_note {
+	width: 60%;
+}
+
+.hl_attendee_checked {
+	box-shadow: 0 0 3px #0071A2;
+	border-color: #0071A2;
+}
+
+.raidcal_buttonrow {
+	vertical-align: middle;
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+.raidcal_buttonrow_left {
+	width: 60%;
+	vertical-align: middle;
+}
+
+.raidcal_buttonrow_middle {
+	width: 22%;
+	vertical-align: middle;
+}
+
+.raidcal_buttonrow_right {
+	width: 18%;
+	vertical-align: middle;
+}
+
+.buttonblock {
+	color: inherit;
+}
+
+#raidcal_signin_form h2 span.toggle_button:before,
+#toogleRaidcalModeration h2 span.toggle_button:before {
 	float: none !important;
 	font-size: 13px;
 	line-height: 18px;
@@ -158,20 +196,23 @@ fieldset.settings.floatRight.raid input[type="text"]{
 	font-weight: normal;
 }
 
-.raidcal_infos, .moderation_panel{
+.moderation_panel,
+.raidcal_infos {
 	font-size: 12px;
 	line-height: 1.3;
 }
 
-fieldset.raidcal_infos, fieldset.moderation_panel {
-	padding-top: 0px;
+fieldset.moderation_panel,
+fieldset.raidcal_infos {
+	padding-top: 0;
 }
 
-fieldset.raidcal_infos dt, fieldset.moderation_panel dt {
-	padding-top: 0px;
+fieldset.moderation_panel dt,
+fieldset.raidcal_infos dt {
+	padding-top: 0;
 }
 
-.add_guest{
+.add_guest {
 	display: block;
 	height: 32px;
 	fill: #fff;
@@ -181,15 +222,15 @@ fieldset.raidcal_infos dt, fieldset.moderation_panel dt {
 	line-height: 1.4em;
 }
 
-.default-avatar{
+.default-avatar {
 	background: url('./images/avatar-default.svg') no-repeat;
 	background-size: contain;
-	display:inline-block;
+	display: inline-block;
 	width: 24px;
 	height: 24px;
 }
 
-.default-avatar.small{
+.default-avatar.small {
 	width: 24px;
 	height: 24px;
 }
@@ -201,23 +242,25 @@ fieldset.raidcal_infos dt, fieldset.moderation_panel dt {
 
 table.guesttable {
 	padding: 5px;
-	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.7) inset, 0px 0px 0px 2px rgba(255, 255, 255, 0.1) inset;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
 	background-color: rgba(23, 31, 44, 0.5);
 }
-table.guesttable td{
-/*	color:black;*/
+
+table.guesttable td {
+	/*	color:black;*/
 }
 
 .style1 {
 	text-align: center;
 }
-a.attendee_Link{
+
+a.attendee_Link {
 	text-decoration: none;
 }
-a.attendee_Link:hover{
+
+a.attendee_Link:hover {
 	text-decoration: underline;
 }
-
 /* calendar: raidevent view - Not signed in Members Bar */
 .notsignedpanel {
 	position: fixed;
@@ -225,22 +268,29 @@ a.attendee_Link:hover{
 	right: 0;
 	display: none;
 	background: rgba(0, 0, 0, 0.85);
-	border:1px solid #111111;
-	border-radius: 10px 0px 0px 10px;
+	border: 1px solid #111111;
+	border-radius: 10px 0 0 10px;
 	width: 350px;
 	height: auto;
 	padding: 0 0 10px 20px;
-	opacity: .85;
+	opacity: 0.85;
 	z-index: 9999;
 	color: #fff;
 }
+
 .notsigned_button {
 	outline: none;
 	float: right;
 	display: block;
 }
-.notsignedpanel input { border: 1px solid rgba(255, 255, 255, 0.25) !important; }
-.notsignedpanel .contentDivider { border-bottom: 1px solid #424242; }
+
+.notsignedpanel input {
+	border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.notsignedpanel .contentDivider {
+	border-bottom: 1px solid #424242;
+}
 
 span.group_selector {
 	outline: none;
@@ -248,10 +298,11 @@ span.group_selector {
 	display: block;
 }
 
-.notsignedpanel_close{
+.notsignedpanel_close {
 	cursor: pointer;
 }
-.notsignedpanel_close:before{
+
+.notsignedpanel_close:before {
 	content: "\f057";
 	font-family: FontAwesome;
 	color: red;
@@ -260,44 +311,54 @@ span.group_selector {
 	top: -8px;
 	left: -14px;
 }
-.tooltiprow{
+
+.tooltiprow {
 	min-height: 24px;
 }
-#memberScroller{
+
+#memberScroller {
 	height: 300px;
-	overflow:auto;
-	width:380px;
+	overflow: auto;
+	width: 380px;
 }
-#pnlMemButton{
-	padding-left:60px;
-	padding-top:15px;
+
+#pnlMemButton {
+	padding-left: 60px;
+	padding-top: 15px;
 }
-#pnlHeader{
+
+#pnlHeader {
 	font-size: 13pt;
 	font-weight: bold;
 }
 
-.raidcal_actionbar{
+.raidcal_actionbar {
 	margin: 5px;
 	cursor: pointer;
 }
-#raidcal_signin_form div{
+
+#raidcal_signin_form div {
 	height: 50px;
-	display:table-cell;
-	vertical-align:middle;
+	display: table-cell;
+	vertical-align: middle;
 }
-#raidcal_change_signin{
-	float:right;
-	margin-top:14px;
-	margin-right:10px;
+
+#raidcal_change_signin {
+	float: right;
+	margin-top: 14px;
+	margin-right: 10px;
 }
-.charchange_menu, .notechange_menu{
+
+.charchange_menu,
+.notechange_menu {
 	display: none;
 }
-.charchange_menucontainer{
-	background-color:#466988;
+
+.charchange_menucontainer {
+	background-color: #466988;
 	overflow: hidden;
 }
-.eventdata-details div{
-	margin: 8px 0px;
+
+.eventdata-details div {
+	margin: 8px 0;
 }

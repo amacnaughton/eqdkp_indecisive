@@ -4,10 +4,13 @@
 }
 
 #header {
-	background: transparent url('TEMPLATE_IMAGE_PATH/background.jpg') no-repeat fixed center 0px !important;
+	background: transparent url('/inde/illidan-test.jpg') no-repeat center 0px;
 	display:block;
 	width: 100%;
 	text-align:center;
+	margin-bottom: $spacing;
+  box-shadow: 0 2px 3px #000;
+	height: 360px;
 }
 
 #logoContainer {
@@ -16,7 +19,7 @@
 }
 
 #header .center {
-	margin-left:auto;
+  margin-left: 10px;
 	margin-right:auto;
 }
 
@@ -31,6 +34,7 @@
 
 #logoArea {
 	text-align:right;
+	margin-top: 40px;
 	img {
 		width: 500px;
 	}

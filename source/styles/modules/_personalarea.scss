@@ -1,0 +1,75 @@
+/* personal area */
+#personalArea {
+	min-height: 39px;
+	color: #B9C0B7;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align:left;
+  border: 1px solid $color-dark;
+}
+
+#personalArea a {
+	color: #d9d7d7;
+	text-decoration:none;
+}
+#personalArea a:hover {
+	color: #fff;
+	text-decoration:underline;
+}
+#personalArea a:hover i {
+	text-decoration:none;
+}
+#personalAreaUser ul li {
+	float: left;
+	margin-right: 25px;
+}
+#personalAreaUser {
+	float:left;
+	margin-top: 10px;
+}
+#personalAreaUser .user-avatar-smallest > img{
+	margin-top: -5px;
+	margin-bottom: -4px;
+}
+
+#personalAreaTime {
+	float:right;
+	margin-top: 4px;
+}
+
+#personalAreaTime ul li {
+	float: left;
+	margin-left: 25px;
+}
+
+#personalAreaTime #search_form {
+	position: relative;
+	display: inline;
+	margin-left: 10px;
+}
+
+#personalAreaTime #search_form input {
+	background-color: rgba(255, 255, 255, 0.05) none repeat scroll 0% 0%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px 4px 4px 4px;
+	color: #D9D7D7;
+	height: 20px;
+	padding: 2px 5px;
+	width: 200px;
+	font: 14px 'Trebuchet MS',Arial,sans-serif;
+}
+
+#personalAreaTime button, #personalAreaTime button:hover {
+	background: none repeat scroll 0 0 transparent !important;
+	border: medium none;
+	position: absolute;
+	right: 2px;
+	top: -4px;
+	cursor:pointer;
+	color: #d9eef7;
+	box-shadow: none;
+}
+
+#personalAreaTime .personalAreaTime {
+	margin-top: 6px;
+}

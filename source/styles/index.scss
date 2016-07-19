@@ -11,7 +11,12 @@
 @import 'base/typography';
 @import 'base/base';
 
-// Base
+
+// util
+// ---------------------------------------------
+@import 'util/responsive';
+
+// modules
 // ---------------------------------------------
 @import 'modules/acp';
 @import 'modules/button';
@@ -24,5 +29,6 @@
 @import 'modules/menu';
 @import 'modules/plugin';
 @import 'modules/portal';
-@import 'modules/responsive';
 @import 'modules/ribbon';
+@import 'modules/personalarea';
+@import 'modules/ui';
