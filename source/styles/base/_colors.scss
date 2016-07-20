@@ -17,6 +17,59 @@ $color-active-link: #68ad01;
 $background-opacity: 0.25;
 $background-panel: #141415;
 
+$color-confirm: #086900;
+$color-signup: #d4d200;
+$color-signoff: #b80000;
+
+$class-death-knight: #C41F3B;
+$class-demon-hunter: #A330C9;
+$class-druid: #FF7D0A;
+$class-hunter: #ABD473;
+$class-mage: #69CCF0;
+$class-monk: #00FF96;
+$class-paladin: #F58CBA;
+$class-priest: #FFFFFF;
+$class-rogue: #FFF569;
+$class-shaman: #0070DE;
+$class-warlock: #9482C9;
+$class-warrior: #C79C6E;
+
+.class_class_1 {
+  color: $class-death-knight;
+}
+.class_class_2 {
+  color: $class-druid;
+}
+.class_class_3 {
+  color: $class-hunter;
+}
+.class_class_4 {
+  color: $class-mage;
+}
+.class_class_5 {
+  color: $class-paladin;
+}
+.class_class_6 {
+  color: $class-priest;
+}
+.class_class_7 {
+  color: $class-rogue;
+}
+.class_class_8 {
+  color: $class-shaman;
+}
+.class_class_9 {
+  color: $class-warlock;
+}
+.class_class_10 {
+  color: $class-warrior;
+}
+.class_class_11 {
+  color: $class-monk;
+}
+.class_class_0, .class_class_12 {
+  color: $class-demon-hunter;
+}
 /* color styles
 ---------------------------------------------- */
 

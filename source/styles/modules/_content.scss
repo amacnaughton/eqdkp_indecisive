@@ -54,21 +54,6 @@
 	padding-left: 5px;
 }
 
-#contentFooter a,
-#contentFooter a:hover,
-#contentFooter a:visited {
-	color: rgba(255, 255, 255, 0.2);
-	text-decoration: none;
-}
-
-#contentFooter a:hover {
-	color: #FFF;
-}
-
-#contentFooter .dropdown-menu,
-#contentFooter .dropdown-menu a {
-	color: #000;
-}
 /* general: comment system */
 #htmlCommentTable {
 	background: none;
@@ -76,10 +61,8 @@
 
 div.contentBox {
 	margin-bottom: 10px;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	background-color: rgba(23, 31, 44, 0.4);
+	background: $background-panel;
+	border: 1px solid $color-dark;
 }
 
 .contentBox .boxHeader {
@@ -88,10 +71,6 @@ div.contentBox {
 	line-height: 28px;
 	text-align: left;
 	padding: 0 8px;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset, 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-	background-color: rgba(23, 31, 44, 0.4);
 }
 
 .contentBox .boxContent {
@@ -100,7 +79,7 @@ div.contentBox {
 
 .contentBox .boxHeader h1 {
 	color: #E9BD7F;
-	font-size: 11px;
+	font-size: $font-size-base;
 	font-weight: bold;
 	height: 28px;
 	line-height: 28px;
@@ -117,11 +96,11 @@ div.contentBox {
 
 .contentBox .boxContent h2 a {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: $font-size-base;
 }
 
 .boxContent .comment_text {
-	font-size: 12px;
+	font-size: $font-size-base;
 }
 
 .boxContent .comment_link,
@@ -616,7 +595,7 @@ hr#system-readmore {
 	display: block;
 }
 
-td .bigDateTd {
+.td.bigDateTd {
 	display: none;
 }
 
@@ -672,6 +651,13 @@ td .bigDateTd {
 .list-type2 .fa-comments,
 .list-type2 .fa-folder-o {
 	margin-left: 10px;
+}
+
+.eventdata-details div {
+	i {
+		margin-right: 5px;
+	}
+	line-height: 2;
 }
 /* Article Boxes for Calendarentries */
 .articleCalendarEventBox {
@@ -887,48 +873,24 @@ div.error {
 	position: relative;
 	min-height: 68px;
 	min-height: 68px;
-	padding: 5px;
-	background: rgba(0, 22, 41, 0.7);
-	border: #3A4E59 solid 1px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
 	margin-left: 130px;
 	word-break: normal;
+	margin-bottom: $spacing;
 }
 
 .comment_container:after,
 .comment_write_container:after {
-	content: "";
-	position: absolute;
-	top: 21px;
-	left: -15px;
-	border-style: solid;
-	border-width: 11px 15px 11px 0;
-	border-color: transparent rgba(0, 22, 41, 0.85);
-	display: block;
-	width: 0;
-	z-index: 1;
+
 }
 
 .comment_container:before,
 .comment_write_container:before {
-	content: "";
-	position: absolute;
-	top: 21px;
-	left: -16px;
-	border-style: solid;
-	border-width: 11px 15px 11px 0;
-	border-color: transparent #3A4E59;
-	display: block;
-	width: 0;
-	z-index: 0;
 }
 
 div.comment_author {
 	color: #9f9f9f;
 	margin-bottom: 5px;
-	font-size: 11px;
 }
 
 .comment_text blockquote {
@@ -1171,7 +1133,7 @@ a.tool-item i {
 	display: inline-block;
 	font-size: 15px;
 	font-weight: bold;
-	line-height: 18px;
+	line-height: 1;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	vertical-align: baseline;
 	white-space: nowrap;
@@ -1193,7 +1155,7 @@ a.tool-item i {
 	color: #004BFF;
 	display: inline-block;
 	font-size: 15px;
-	line-height: 18px;
+	line-height: 1;
 	font-weight: bold;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	vertical-align: baseline;
@@ -1217,7 +1179,7 @@ a.tool-item i {
 	color: #004BFF;
 	display: inline-block;
 	font-size: 15px;
-	line-height: 18px;
+	line-height: 1;
 	font-weight: bold;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	vertical-align: baseline;
@@ -1312,22 +1274,19 @@ input[type="submit"] i {
 
 #contentFooter .rss-tooltip.dropdown-menu li,
 #personalAreaUser ul.dropdown-menu li {
-	line-height: 14px;
+	line-height: 2;
 	float: none;
 	margin-right: 0;
-	color: rgba(255, 255, 255, 0.7);
 }
 
 #contentFooter .rss-tooltip.dropdown-menu li:hover,
 #user-tooltip li:hover {
-	background-color: rgba(255, 255, 255, 0.15);
 }
 
 #personalArea .dropdown-menu li > a,
 #personalArea .dropdown-menu li > span.nolink,
 .rss-tooltip.dropdown-menu li > a {
 	clear: both;
-	color: rgba(255, 255, 255, 0.7);
 	display: block;
 	font-weight: normal;
 	line-height: 20px;
@@ -1337,8 +1296,8 @@ input[type="submit"] i {
 
 #contentFooter .rss-tooltip.dropdown-menu li > a:hover,
 #personalArea .dropdown-menu li > a:hover {
-	color: #00C0FF;
 	text-decoration: none;
+	color: $color-primary;
 }
 
 ul#mychars-points-tooltip.dropdown-menu li table tbody tr td a {
@@ -1422,7 +1381,7 @@ span[class*="class"] {
 
 .tooltip-divider {
 	display: block;
-	border-bottom: 1px solid #3A4E59;
+	border-bottom: 1px solid $color-dark;
 	width: 100%;
 	margin-top: 4px;
 	margin-bottom: 4px;
@@ -1469,11 +1428,12 @@ span[class*="class"] {
 
 #notification-tooltip-all {
 	padding: 6px;
+	color: $color-light;
 }
 
 #notification-tooltip-all h2 {
-	color: #666666;
-	font-size: 14px;
+	color: $color-light;
+	font-size: $font-size-base;
 	white-space: nowrap;
 }
 
@@ -1841,4 +1801,50 @@ button#cboxSlideshow {
 
 .update_available {
 	line-height: 1;
+}
+
+/* Raid Sign Up Page */
+.table.raidcal_buttonrow {
+	box-shadow: none;
+}
+
+.roledistribution {
+
+	.status0 {
+		color: $color-confirm;
+		text-transform: capitalize;
+	}
+	.status1 {
+		color: $color-signup;
+		text-transform: capitalize;
+	}
+	.status2 {
+		color: $color-signoff;
+		text-transform: capitalize;
+	}
+
+	.attendee_box {
+		border: 1px solid $color-dark;
+
+		div div:first-child {
+			width: 2em;
+		}
+	}
+	th {
+		border: 1px solid $color-dark;
+		background-color: $color-dark-gray;
+	}
+}
+
+.notsignedpanel {
+	background: $background-panel;
+	opacity: 1;
+	border: 1px solid $color-dark;
+}
+
+#bottommenu_admin, #bottommenu_chars {
+	background: $background-panel;
+	opacity: 0.9;
+	width: 100%;
+	color: $color-light;
 }

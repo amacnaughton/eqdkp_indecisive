@@ -1,4 +1,5 @@
 $button-border: 1px solid #000;
+$button-padding: 10px 20px;
 @mixin admin-button {
   color: $color-light;
   font-size: $font-size-medium-small;
@@ -38,7 +39,14 @@ input[type="submit"] {
   @include button;
 
   &.mainoption, &.liteoption {
-    padding: 10px 20px;
+    padding: $button-padding;
+  }
+  &:hover {
+    color: $color-light;
+    background: darken($color-active-link, 20%);
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -206,4 +214,16 @@ button.thirdpartylogin.openid {
 .neutral {
   color: #999;
   text-shadow: 0 0 1px #000;
+}
+
+.raidcal_buttonrow .td {
+  padding:0;
+  margin-top: $spacing;
+  button {
+    padding: $button-padding;
+  }
+}
+
+#comment_button input[type="submit"] {
+  padding: $button-padding;
 }
